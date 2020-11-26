@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application3</string>
+    <string name="make_a_payment">MAKE A PAYMENT</string>
+    <string name="step_1_of_4">Step 1 of 4</string>
+    <string name="back">Back</string>
+    <string name="cancle">Cancle</string>
+    <string name="select_a_method_of_payment">SELECT A METHOD OF PAYMENT</string>
+    <string name="enter_the_amount_you_wish_to_pay_for_your_bill_or_make_paymnt_through_your_bank">Enter the amount you wish to pay for your bill or make paymnt through your bank</string>
+    <string name="enter_amount_to_pay">ENTER AMOUNT TO PAY</string>
+
+</resources>

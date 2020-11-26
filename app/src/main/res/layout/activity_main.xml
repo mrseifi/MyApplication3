@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header_1"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/virgin"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/make_a_payment"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/Button_right"
+        app:layout_constraintStart_toEndOf="@id/button_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/virgin"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="@string/step_1_of_4"
+        app:layout_constraintEnd_toStartOf="@id/Button_right"
+        app:layout_constraintStart_toEndOf="@id/button_left"
+        app:layout_constraintTop_toBottomOf="@id/header_1" />
+
+    <Button
+        android:id="@+id/button_left"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/virgin"
+        app:backgroundTint="@color/virgin"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_right"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/virgin"
+        android:text="@string/cancle"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:backgroundTint="@color/virgin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="16dp"
+        android:paddingTop="32dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/message_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_2"
+        android:text="@string/enter_amount_to_pay"
+        />
+
+    <TextView
+        android:id="@+id/message_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingStart="16dp"
+        android:paddingBottom="32dp"
+        android:textSize="15sp"
+        android:background="@color/message_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_1"
+        android:text="@string/enter_the_amount_you_wish_to_pay_for_your_bill_or_make_paymnt_through_your_bank"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/message_2"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_button_background"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/message_2"
+        android:background="@color/black"
+        />
+    <View
+        android:id="@+id/bottom_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/message_back"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/virgin"
+        app:backgroundTint="@color/virgin"
+        android:text="@string/select_a_method_of_payment"
+        />
+
+    <Button
+        android:id="@+id/button_bank1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RBC"
+        app:layout_constraintTop_toBottomOf="@id/message_2"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <Button
+        android:id="@+id/button_bank2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scotia"
+        app:layout_constraintTop_toBottomOf="@id/message_2"
+        app:layout_constraintStart_toEndOf="@id/button_bank1"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="32dp"
+        />
+    <Button
+        android:id="@+id/button_bank3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMO"
+        app:layout_constraintTop_toBottomOf="@id/message_2"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@id/button_bank2"
+        android:layout_marginStart="32dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
